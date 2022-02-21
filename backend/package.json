@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": " app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "appClient": "cd ../frontend && npm start",
+    "dev": "concurrently \" nodemon app.js\" \" npm run appClient\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.28.4",
+    "bcrypt": "^5.0.1",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.5",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15"
+  }
+}

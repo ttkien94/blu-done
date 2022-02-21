@@ -1,0 +1,604 @@
+@import "assets/styles/common.scss";
+.blog {
+  .card-title {
+    color: black;
+  }
+  .card-text {
+    color: #76767a;
+  }
+  padding-top: 20px;
+  margin-left: 120px;
+  a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .blog-header {
+    background-color: white;
+    padding-bottom: 30px;
+    .card {
+      height: 300px;
+      border-radius: unset;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 0;
+
+      .card-img-top {
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.6s ease;
+      }
+      .card-body {
+        padding: 20px 15px 0px 15px;
+        bottom: 5%;
+        left: 5%;
+        width: 90%;
+        height: 105px;
+        text-align: center;
+        position: absolute;
+        // bottom: -10px;
+        // opacity: 0;
+        z-index: 2;
+        transition: all 0.6s ease;
+        text-align: center;
+        background: white;
+
+        .card-title {
+          transition: all 0.6s ease;
+          font-weight: bold;
+          margin-bottom: 0;
+          font-size: 17px;
+          opacity: 1;
+          position: absolute;
+          padding-right: 20px;
+        }
+        .card-text {
+          color: #76767a;
+          transition: all 0.6s ease;
+          font-size: 12px;
+          opacity: 0;
+          position: absolute;
+          padding-right: 20px;
+        }
+        Button {
+          background-color: #f47500;
+          border: none;
+          font-size: 11px;
+          position: absolute;
+          top: -10%;
+          left: 50%;
+          transform: translate(-50%, -10%);
+        }
+      }
+      &:hover {
+        .card-body {
+          bottom: 10px;
+          transition: all 0.6s ease;
+          opacity: 1;
+        }
+        .card-img-top {
+          transform: scale(1.3);
+          transition: all 0.6s ease;
+        }
+        .card-title {
+          transition: all 0.6s ease;
+          position: absolute;
+          transform: translateY(-100px);
+          // top: -100px;
+          opacity: 0;
+        }
+        .card-text {
+          opacity: 1;
+          transition: all 0.6s ease;
+        }
+      }
+    }
+  }
+  .blog-content {
+    .blog-content-header {
+      position: relative;
+      width: 100%;
+      font-size: 22px;
+      color: #f47500;
+      font-family: Covered-By-Your-Grace;
+      span {
+        color: black;
+      }
+      .view-all {
+        color: black;
+        position: absolute;
+        right: 3%;
+        top: 0%;
+      }
+    }
+    .blog-content-video {
+      position: relative;
+      padding: 0 15px;
+      .card-body {
+        bottom: 0;
+      }
+      .video-left {
+        width: 50%;
+      }
+      .video-right {
+        padding-left: 3px;
+        position: absolute;
+        height: 100%;
+        width: 48%;
+        overflow: hidden;
+        right: 15px;
+        top: 0%;
+        .card {
+          height: 50%;
+        }
+        .card:nth-child(1) {
+          margin-bottom: 3px;
+        }
+      }
+      .card {
+        // height: 500px;
+        .card-img-top {
+          height: 100%;
+          width: 100%;
+        }
+        .card-body {
+          padding: 20px 20px 0px 20px;
+          position: absolute;
+          bottom: 0%;
+          left: 0%;
+          width: 90%;
+          height: 100px;
+          text-align: left;
+          .card-title {
+            font-size: 18px;
+            margin-bottom: 0;
+            color: white;
+            font-weight: bold;
+          }
+          .card-text {
+            font-size: 12px;
+            color: #76767a;
+          }
+          Button {
+            padding: 0 6px;
+            font-size: 11px;
+            background-color: #f47500aa;
+            border: none;
+            color: white;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+      //   .video-right {
+      //     .card-img-top {
+      //       height: 250px;
+      //     }
+      //   }
+    }
+    .blog-content-read-more {
+      margin-bottom: 25px;
+      .card-img-top {
+        padding: 15px 15px 0 15px;
+        height: 250px;
+      }
+      .card-body {
+        position: relative;
+        text-align: center;
+        .card-title {
+          margin-top: 15px;
+          font-size: 22px;
+        }
+        .card-text {
+          font-size: 14px;
+        }
+        button {
+          padding: 3px 10px;
+          font-size: 11px;
+          position: absolute;
+          left: 50%;
+          top: -8%;
+          transform: translate(-50%, -8%);
+          background-color: #f47500;
+          border-color: white;
+        }
+      }
+    }
+
+    .popular-post {
+      border: 1px solid #bebebe;
+      box-shadow: 0px 0px 5px gray;
+      position: relative;
+      background-color: #ffffff;
+      margin: 0 0 25px;
+      .title {
+        width: 100%;
+        padding: 8px 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #bebebe;
+      }
+      .content {
+        padding: 15px;
+        .card:nth-child(1) {
+          height: 200px;
+          width: 100%;
+          .card-img-top {
+            height: 100%;
+            width: 100%;
+          }
+          .card-body {
+            padding: 20px 20px 0px 20px;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            width: 100%;
+            text-align: left;
+            .card-title {
+              font-size: 18px;
+              margin-bottom: 0;
+              color: white;
+              font-weight: bold;
+            }
+            .card-text {
+              font-size: 12px;
+              color: #76767a;
+              margin-bottom: 10px;
+            }
+            Button {
+              padding: 0 6px;
+              font-size: 11px;
+              background-color: #f47500aa;
+              border: none;
+              color: white;
+              position: absolute;
+              top: 0;
+              display: unset;
+            }
+          }
+        }
+        .card {
+          margin-bottom: 20px;
+          flex-direction: row;
+          border: unset;
+          .card-img-top {
+            height: 65px;
+            width: 80px;
+            margin-right: 10px;
+          }
+          .card-body {
+            padding: 0;
+            .card-title {
+              font-weight: bold;
+              font-size: 13px;
+              margin-bottom: 0;
+            }
+            .card-text {
+              font-size: 10px;
+              margin-bottom: 0;
+              color: #76767a;
+            }
+            button {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .lastest-recipes {
+      border: 1px solid #bebebe;
+      box-shadow: 0px 0px 5px gray;
+      position: relative;
+      background-color: #ffffff;
+      margin: 0 0 25px;
+      .title {
+        width: 100%;
+        padding: 8px 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #bebebe;
+      }
+      .lastest-recipes-content {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .col-md-6 {
+          padding-right: 5px;
+          padding-left: 5px;
+          padding-bottom: 10px;
+        }
+        .card {
+          height: 120px;
+          overflow: hidden;
+          border: unset;
+          .card-img-top {
+            height: 80px;
+          }
+          .card-body {
+            padding: 10px 0;
+            .card-title {
+              font-size: 13px;
+              font-weight: bold;
+              margin-bottom: 5px;
+              width: 100%;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+            .card-text {
+              margin-bottom: 0;
+              font-size: 12px;
+              color: #767676;
+            }
+            button {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .comments {
+      border: 1px solid #bebebe;
+      box-shadow: 0px 0px 5px gray;
+      position: relative;
+      background-color: #ffffff;
+      margin: 0 0 25px;
+      .comments-title {
+        width: 100%;
+        padding: 8px 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #bebebe;
+      }
+      .comments-content {
+        padding: 15px;
+        border-bottom: 1px solid#9b9b9b1a;
+        border-width: 90%;
+        .comments-content-avatar {
+          //   width: 35px;
+          //   height: 35px;
+          padding-left: 15px;
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+        .comments-content-title {
+          font-weight: bold;
+          font-size: 15px;
+          &:hover {
+            color: #f47500;
+          }
+        }
+        .comments-content-text {
+          color: #47474a;
+          font-size: 12px;
+        }
+      }
+    }
+    .blog-footer {
+      .view-all {
+        right: 0;
+      }
+      .col-md-3 {
+        padding: 0;
+      }
+      .card {
+        border: unset;
+        .card-img-top {
+          height: 200px;
+        }
+        .card-body {
+          position: relative;
+          text-align: center;
+          .card-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+          }
+          .card-text {
+            font-size: 14px;
+          }
+          button {
+            padding: 3px 10px;
+            font-size: 11px;
+            position: absolute;
+            left: 50%;
+            top: -8%;
+            transform: translate(-50%, -8%);
+            background-color: #f47500;
+            border-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      width: 100% !important;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .blog-fluid {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .blog-fluid {
+      width: 100%;
+    }
+  }
+}
+.blog-fluid {
+  width: 33.3333333333%;
+  // position: relative;
+  align-items: stretch;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: #000;
+  // text-align: center;
+  .blog-inner-fluid {
+    padding-top: 44%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate(0);
+    overflow: hidden;
+    .blog-image-fluid {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      // -webkit-user-select: none;
+      // -moz-user-select: none;
+      // -ms-user-select: none;
+      user-select: none;
+      background-color: #000;
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        pointer-events: none;
+        -webkit-transition: 0.35s ease;
+        -o-transition: 0.35s ease;
+        transition: 0.35s ease;
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 0.05)),
+          to(#1d1d1d)
+        );
+        background: -o-linear-gradient(rgba(0, 0, 0, 0.05), #1d1d1d);
+        background: linear-gradient(rgba(0, 0, 0, 0.05), #1d1d1d);
+        -webkit-transition: opacity 0.35s ease;
+        -o-transition: opacity 0.35s ease;
+        transition: opacity 0.35s ease;
+        pointer-events: none;
+      }
+      &:hover {
+        // transition: 0.35s ease;
+        // transform: scale(1.2);
+      }
+    }
+    .blog-content-fluid {
+      z-index: 1;
+      width: 100%;
+      margin-top: auto;
+      padding: 0 48px 48px;
+      pointer-events: none;
+      .blog-title-fluid {
+        margin: 12px 0 16px;
+        font-size: 48px;
+        line-height: 0.85;
+        text-align: center;
+        pointer-events: all;
+        a {
+          text-decoration: underline;
+          -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: $b3;
+          }
+        }
+      }
+      .blog-meta-fluid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        color: #fff;
+        .blog-tag-fluid {
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          line-height: 1;
+          a {
+            position: relative;
+            font-family: Teko, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            pointer-events: all;
+            &:after {
+              content: ",";
+              margin: 0 2px;
+              display: inline-block;
+              color: #fff;
+            }
+            &:last-child::after {
+              content: "";
+              position: relative;
+              bottom: 0.2rem;
+              display: inline-block;
+              height: 3px;
+              width: 3px;
+              margin: 0 0.5rem 0 0.5rem;
+              border-radius: 50%;
+              background-color: #fff;
+            }
+            &:hover {
+              color: $b3;
+            }
+          }
+        }
+        .blog-date-fluid {
+          font-family: Teko, sans-serif;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 1;
+          color: #83807a;
+          pointer-events: all;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog {
+    margin-left: unset;
+    .lastest-recipes {
+      .title {
+        font-size: x-large;
+        color: black;
+      }
+      .card {
+        .card-img-top {
+          height: 250px !important;
+        }
+      }
+    }
+  }
+}

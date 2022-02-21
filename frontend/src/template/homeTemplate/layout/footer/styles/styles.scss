@@ -1,0 +1,54 @@
+/* 3. End home css */
+
+/* Footer css */
+
+.footer {
+  // &:before {
+  //   content: "";
+  //   width: 0;
+  //   height: 0;
+  //   border-style: solid;
+  //   border-width: 0 0 90px 98vw;
+  //   border-color: transparent transparent #313e62 #f1f1f1;
+  //   transform: scale(1.0001);
+  // }
+  // padding-left: 125px;
+  text-align: center;
+  background-color: #313e62;
+  color: #bababa;
+  .row {
+    margin: 0;
+  }
+  i {
+    font-size: 50px;
+  }
+  .location {
+    color: red;
+  }
+  .phone {
+    color: green;
+    transform: rotate(-50deg);
+  }
+  .email {
+    color: yellow;
+  }
+  h2 {
+    color: #fcfcfc;
+    position: relative;
+    padding: 15px 0px 4px 0px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 3px;
+    background: rgb(255, 196, 85);
+  }
+}
+/* End Footer css */

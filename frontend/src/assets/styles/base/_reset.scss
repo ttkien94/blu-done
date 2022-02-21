@@ -1,0 +1,48 @@
+/* 1. default css */
+
+img {
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+@font-face {
+  font-family: Covered-By-Your-Grace;
+  src: url("../../fonts/Covered_By_Your_Grace/CoveredByYourGrace-Regular.ttf");
+}
+a {
+  text-decoration: unset;
+}
+.container {
+  // width: 1180px;
+}
+.area-pt {
+  padding-top: 50px;
+}
+.area-pb {
+  padding-bottom: 50px;
+}
+.area-mt {
+  margin-top: 50px;
+}
+.area-mb {
+  margin-bottom: 50px;
+}
+.area-mb20 {
+  margin-bottom: 20px;
+}
+.body {
+  padding-left: 125px;
+  background-color: rgb(241, 241, 241);
+}
+
+.flex-alignitem {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .body {
+    padding-left: 0px;
+  }
+}

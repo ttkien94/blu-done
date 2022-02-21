@@ -1,0 +1,60 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password":"admin"
+}
+
+###
+
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password":"admin"
+}
+
+###
+GET  http://localhost:5000/api/blog
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBjZmExN2ZiYWZmOWM1NjA2ZDRkNWEiLCJpYXQiOjE2NDUwMzYzODJ9.4TcL0FsgmJ8k1TkfsOBiihm6lctpHgYjpjBwfkNB-wI
+
+###
+POST  http://localhost:5000/api/blog/add
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBjZmExN2ZiYWZmOWM1NjA2ZDRkNWEiLCJpYXQiOjE2NDUwMzYzODJ9.4TcL0FsgmJ8k1TkfsOBiihm6lctpHgYjpjBwfkNB-wI
+
+{
+    "title": "tieu de 7 do admin tao hehehehehe ghahahah ahaha",
+    "description": "mota 7 do admin tao",
+    "img": "1",
+    "type": "popular"
+}
+
+###
+
+PUT  http://localhost:5000/api/blog/620d4510e0b684ecd9635006
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBjZmExN2ZiYWZmOWM1NjA2ZDRkNWEiLCJpYXQiOjE2NDUwMzYzODJ9.4TcL0FsgmJ8k1TkfsOBiihm6lctpHgYjpjBwfkNB-wI
+
+{
+    "title": "tieu de 3 update2 do admin tao",
+    "description": "mota 3 update3 do admin tao",
+    "img": "https://picsum.photos/100/100"
+}
+
+###
+DELETE  http://localhost:5000/api/blog/620d4510e0b684ecd9635006
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBjZmExN2ZiYWZmOWM1NjA2ZDRkNWEiLCJpYXQiOjE2NDUwMzYzODJ9.4TcL0FsgmJ8k1TkfsOBiihm6lctpHgYjpjBwfkNB-wI
+
+###
+POST http://localhost:5000/api/deleteimage
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBjZmExN2ZiYWZmOWM1NjA2ZDRkNWEiLCJpYXQiOjE2NDUwMzYzODJ9.4TcL0FsgmJ8k1TkfsOBiihm6lctpHgYjpjBwfkNB-wI
+
+{
+    "img": "images/1645429799344-0-findus.png"
+}

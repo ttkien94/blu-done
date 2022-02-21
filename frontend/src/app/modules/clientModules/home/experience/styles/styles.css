@@ -1,0 +1,93 @@
+.experience {
+  position: relative;
+  background: linear-gradient(110deg, #e8a437 60%, #fdcd00 60%);
+}
+
+.experience .video {
+  position: absolute;
+}
+
+.experience .experience-content {
+  background-color: #030000c4;
+  margin-bottom: 80px;
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.experience .experience-content .description {
+  width: 70%;
+  float: left;
+  padding: 15px;
+}
+
+.experience .experience-content .description h3 {
+  color: #fdcd00;
+}
+
+.experience .experience-content .date {
+  width: 30%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: #313e62;
+  text-align: center;
+}
+
+.experience .experience-content .date p {
+  width: 100%;
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+.experience .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.experience .col-3 i {
+  font-size: 50px;
+  color: #1a2950;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 40px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 50%;
+  background-color: #6278a0;
+}
+
+.experience .left-bottom {
+  left: -50%;
+  top: calc(50% - 40px);
+}
+
+.experience .right-bottom {
+  right: -50%;
+  top: calc(50% - 40px);
+}
+
+.experience .corner {
+  border: 3px solid #6278a0;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.experience .corner-top {
+  border-top: 3px solid #6278a0;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=styles.css.map */

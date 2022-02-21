@@ -1,0 +1,152 @@
+.spinner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.mymodal {
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: white;
+    background-color: #2c3e50;
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: 0.25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: 0.25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+}
+
+.blogadmin {
+  .card-img-top {
+    height: 250px;
+  }
+  .blog-title {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  /* Floating add button */
+  .mymodal {
+    width: 90vw;
+  }
+  .btn-floating {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    background: transparent;
+    border: none;
+  }
+
+  .btn-floating:hover {
+    background: transparent;
+  }
+
+  .btn-floating:focus,
+  .btn-floating:active {
+    outline: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Add new post tooltip */
+  .tooltip {
+    background: transparent;
+  }
+
+  .tooltip .arrow::before {
+    border-left-color: #78c2ad;
+  }
+
+  .tooltip-inner {
+    background: #78c2ad;
+  }
+
+  /* Post border thicker */
+  .border-success,
+  .border-warning,
+  .border-danger {
+    border-width: 2px;
+  }
+}
+
+/* Post button */
+.quill {
+  height: 60vh;
+}
+.ql-insertImage,
+.ql-insertVideo,
+.ql-insertFile {
+  width: 50px !important;
+}
+.modal-dialog {
+  width: 80vw;
+  max-width: 80vw;
+}
+.blog-button {
+  padding-top: 0;
+  background: transparent;
+  border: none;
+}
+
+.blog-button:hover {
+  background: transparent;
+}
+
+a.blog-button.btn:focus,
+a.blog-button.btn:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+button.blog-button.btn:focus,
+button.blog-button.btn:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.blog-title {
+  margin-bottom: 0.5rem;
+}

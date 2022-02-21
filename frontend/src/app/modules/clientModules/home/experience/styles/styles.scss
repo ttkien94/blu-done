@@ -1,0 +1,83 @@
+@import "assets/styles/common.scss";
+.experience {
+  .video {
+    position: absolute;
+  }
+  position: relative;
+  background-color: $b4;
+
+  // background: linear-gradient(110deg, #e8a437 60%, #fdcd00 60%);
+  //   background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%),
+  //     url("https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg");
+  .experience-content {
+    background-color: $b0;
+    margin-bottom: 80px;
+    padding: 0;
+    // border: 1px solid #dedede;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    color: #fff;
+    .description {
+      h3,
+      p {
+        color: $b5;
+      }
+
+      width: 70%;
+      float: left;
+      padding: 15px;
+    }
+    .date {
+      width: 30%;
+      height: 100%;
+      float: left;
+      position: relative;
+      background-color: $b3;
+      text-align: center;
+      p {
+        width: 100%;
+        color: $b5;
+        font-size: 28px;
+        position: absolute;
+        top: 50%;
+        // left:50%;
+        transform: translatey(-50%);
+      }
+    }
+  }
+  .col-3 {
+    display: flex;
+    overflow: hidden;
+    i {
+      font-size: 50px;
+      color: $b0;
+      position: absolute;
+      left: 50%;
+      top: calc(50% - 40px);
+      transform: translate(-50%, -50%);
+      padding: 30px;
+      border-radius: 50%;
+      background-color: $b3;
+    }
+  }
+  .left-bottom {
+    left: -50%;
+    top: calc(50% - 40px);
+  }
+  .right-bottom {
+    right: -50%;
+    top: calc(50% - 40px);
+  }
+  .corner {
+    border: 3px solid $b3;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .corner-top {
+    border-top: 3px solid $b3;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+}

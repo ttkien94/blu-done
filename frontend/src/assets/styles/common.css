@@ -1,0 +1,39 @@
+/* 1. default css */
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: Covered-By-Your-Grace;
+  src: url("../../fonts/Covered_By_Your_Grace/CoveredByYourGrace-Regular.ttf");
+}
+
+a {
+  text-decoration: unset;
+}
+
+.container {
+  width: 1180px;
+}
+
+.area-pt {
+  padding-top: 50px;
+}
+
+.area-mt {
+  margin-top: 50px;
+}
+
+.area-mb20 {
+  margin-bottom: 20px;
+}
+
+.body {
+  padding-left: 125px;
+  background-color: #f1f1f1;
+}
+/*# sourceMappingURL=common.css.map */
