@@ -1,7 +1,7 @@
 import { useContext, useEffect, React, useState } from "react";
 import { BlogContext } from "core/contexts/BlogContext";
 import { AuthContext } from "core/contexts/AuthContext";
-import Spinner from "react-bootstrap/spinner";
+// import Spinner from "react-bootstrap/spinner";
 import Button from "react-bootstrap/button";
 import Card from "react-bootstrap/card";
 import Row from "react-bootstrap/row";
@@ -41,7 +41,7 @@ function BlogAdmin() {
   if (blogsLoading) {
     body = (
       <div className="spinner-container">
-        <Spinner animation="border" varient="info" />
+        {/* <Spinner animation="border" varient="info" /> */}
       </div>
     );
   } else if (blogs.lenght === 0) {
