@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "react-bootstrap/card";
-import Row from "react-bootstrap/row";
-import Col from "react-bootstrap/col";
-import Badge from "react-bootstrap/badge";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Badge from "react-bootstrap/Badge";
 import ActionButton from "./ActionButton";
 import "./styles/styles.scss";
 import { imgUrl } from "core/contexts/constants";

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Button from "react-bootstrap/button";
+import Button from "react-bootstrap/Button";
 import editIcon from "assets/img/admin/pencil.svg";
 import deleteIcon from "assets/img/admin/trash.svg";
 import { BlogContext } from "core/contexts/BlogContext";

@@ -1,11 +1,11 @@
 import { useContext, useEffect, React, useState } from "react";
 import { BlogContext } from "core/contexts/BlogContext";
 import { AuthContext } from "core/contexts/AuthContext";
-// import Spinner from "react-bootstrap/spinner";
-import Button from "react-bootstrap/button";
-import Card from "react-bootstrap/card";
-import Row from "react-bootstrap/row";
-import Col from "react-bootstrap/col";
+import Spinner from "react-bootstrap/Spinner";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import SingleBlog from "./SingleBlog";
 import AddBlogModal from "./AddBlogModal";
 import addIcon from "assets/img/admin/plus-circle-fill.svg";
@@ -41,7 +41,7 @@ function BlogAdmin() {
   if (blogsLoading) {
     body = (
       <div className="spinner-container">
-        {/* <Spinner animation="border" varient="info" /> */}
+        <Spinner animation="border" varient="info" />
       </div>
     );
   } else if (blogs.lenght === 0) {
