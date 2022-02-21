@@ -28,7 +28,7 @@ const AuthContextProvider = ({ children }) => {
         });
       }
     } catch (error) {
-      console.log("xóa local storage");
+      // console.log("xóa local storage");
       localStorage.removeItem(LOCAL_STORAGE_TOKEN_NAME);
       setAuthToken(null);
       dispatch({
