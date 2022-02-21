@@ -1,10 +1,10 @@
 export const apiUrl =
   process.env.NODE_ENV !== "production"
-    ? "http://localhost:5000/api"
+    ? "https://hidden-lowlands-85487.herokuapp.com/api"
     : "somedeployURL";
 export const imgUrl =
   process.env.NODE_ENV !== "production"
-    ? "http://localhost:5000/"
+    ? "https://hidden-lowlands-85487.herokuapp.com/"
     : "somedeployURL";
 export const LOCAL_STORAGE_TOKEN_NAME = "learnit-mern";
 
