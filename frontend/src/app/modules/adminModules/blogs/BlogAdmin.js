@@ -57,17 +57,17 @@ function BlogAdmin() {
           ))}
         </Row>
         {/* Open Add Blog Modal */}
-        {/* <OverlayTrigger
+        <OverlayTrigger
           placement="left"
           overlay={<Tooltip> Add Blog </Tooltip>}
-        > */}
-        <Button
-          className="btn-floating"
-          onClick={setShowAddBlogModal.bind(this, true)}
         >
-          <img src={addIcon} alt="add" width="60" height="60" />
-        </Button>
-        {/* </OverlayTrigger> */}
+          <Button
+            className="btn-floating"
+            onClick={setShowAddBlogModal.bind(this, true)}
+          >
+            <img src={addIcon} alt="add" width="60" height="60" />
+          </Button>
+        </OverlayTrigger>
       </>
     );
   }
@@ -93,7 +93,7 @@ function BlogAdmin() {
         })}
         delay={3000}
         autohide
-        animation={false}
+        // animation={false}
       >
         <Toast.Body>
           <strong>{message}</strong>

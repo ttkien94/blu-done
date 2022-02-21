@@ -79,7 +79,7 @@ const UpdateBlogModal = (props) => {
   return (
     <Modal
       show={showUpdateBlogModal}
-      animation={false}
+      // animation={false}
       onHide={closeDialog}
       className="mymodal"
     >

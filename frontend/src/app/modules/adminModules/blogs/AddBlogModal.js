@@ -67,7 +67,7 @@ const AddBlogModal = () => {
   return (
     <Modal
       show={showAddBlogModal}
-      animation={false}
+      // animation={false}
       onHide={closeDialog}
       className="mymodal"
     >
